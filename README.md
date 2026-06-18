@@ -38,3 +38,19 @@ your_workspace/src/your_package/
     └── rectangle.py
     └── square.py          # Main 3D trajectory generation & tracking script
 └── README.md              # This documentation file
+
+Follow these steps in separate terminal windows (ensure your workspace is sourced in each window).
+Step 1: Launch the Kinova Simulation & Control
+
+Start the official Kortex simulation environment. This spins up the robot hardware interfaces, controllers, and MoveIt2 services:
+
+ros2 launch kortex_bringup kortex_sim_control.launch.py robot_type:=gen3_lite dof:=6 gripper:=gen3_lite_2f use_sim_time:=true launch_rviz:=false robot_name:=gen3_lite_gen3_lite_2f
+ros2 launch kinova_gen3_lite_moveit_config demo.launch.py
+ros2 run /your_package "example.py" (eg circle/lemniscate)
+
+
+Wait until the simulation is fully loaded and the /compute_ik and /joint_trajectory_controller/follow_joint_trajectory action servers are ready.
+
+
+
+
