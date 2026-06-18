@@ -77,3 +77,5 @@ Replace `circle.py` with `lemniscate.py`, `lissajous.py`, `rectangle.py`, or `sq
 Wait until the simulation is fully loaded and the following action servers are ready:
 - `/compute_ik` (Inverse Kinematics service)
 - `/joint_trajectory_controller/follow_joint_trajectory` (Trajectory execution action)
+
+
