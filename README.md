@@ -12,7 +12,7 @@ This repository provides a complete pipeline to generate, validate, and execute 
 
 ---
 
-## 🛠️ Prerequisites & Installation
+##  Prerequisites & Installation
 
 ### 1. Install `ros2_kortex` Dependencies
 Before running this project, you must install the official Kinova ROS2 drivers and simulation packages. 
