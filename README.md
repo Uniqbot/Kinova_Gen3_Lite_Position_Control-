@@ -2,7 +2,7 @@
 
 This repository provides a complete pipeline to generate, validate, and execute a 3D circular trajectory for the **Kinova Gen3 Lite** manipulator using ROS2, MoveIt2, and Action Clients. The system features real-time diagnostics, safety-aware trajectory validation, and comprehensive performance tracking.
 
-## 📌 Features
+##  Features
 
 * **Trajectory Generation:** Automatic 3D Cartesian waypoint calculation for circular paths.
 * **Safety & Feasibility Filters:** Built-in workspace constraint validation and kinematic singularity avoidance.
@@ -18,7 +18,7 @@ This repository provides a complete pipeline to generate, validate, and execute 
 Before running this project, you must install the official Kinova ROS2 drivers and simulation packages. 
 
 Follow the installation instructions provided in the official repository:
-👉 **[Official Kinova ros2_kortex Repository](https://github.com/Kinovarobotics/ros2_kortex/tree/main)**
+ **[Official Kinova ros2_kortex Repository](https://github.com/Kinovarobotics/ros2_kortex/tree/main)**
 
 Ensure your ROS2 workspace builds completely and all MoveIt2/Kortex packages are correctly sourced.
 
