@@ -80,8 +80,8 @@ Wait until the simulation is fully loaded and the following action servers are r
 - `/compute_ik` (Inverse Kinematics service)
 - `/joint_trajectory_controller/follow_joint_trajectory` (Trajectory execution action)
 
-- Hardware
-- 
+Hardware
+
 ```bash
 ros2 launch kortex_bringup gen3_lite.launch.py   robot_ip:=Your robot ip robot_type:=gen3_lite dof:=6 gripper:=gen3_lite_2f robot_name:=gen3_lite_gen3_lite_2f
 ```
