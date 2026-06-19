@@ -105,7 +105,7 @@ class SquareTrajectoryGenerator:
     def __init__(
         self,
         center_x=0.35, center_y=0.00, center_z=0.25,
-        width=0.10, height=0.08,
+        width=0.10, height=0.10,
         num_points=100,
         roll_deg=180.0, pitch_deg=0.0, yaw_deg=90.0,
     ):
