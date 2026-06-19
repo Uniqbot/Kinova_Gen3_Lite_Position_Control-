@@ -46,7 +46,7 @@ your_workspace/src/your_package/
 
 ---
 
-## 🚀 Execution Guide
+##  Execution Guide
 
 Follow these steps in separate terminal windows (ensure your workspace is sourced in each window).
 
