@@ -54,6 +54,8 @@ Follow these steps in separate terminal windows (ensure your workspace is source
 
 Start the official Kortex simulation environment. This spins up the robot hardware interfaces, controllers, and MoveIt2 services:
 
+Simulation
+
 ```bash
 ros2 launch kortex_bringup kortex_sim_control.launch.py robot_type:=gen3_lite dof:=6 gripper:=gen3_lite_2f use_sim_time:=true launch_rviz:=false robot_name:=gen3_lite_gen3_lite_2f
 ```
@@ -77,5 +79,22 @@ Replace `circle.py` with `lemniscate.py`, `lissajous.py`, `rectangle.py`, or `sq
 Wait until the simulation is fully loaded and the following action servers are ready:
 - `/compute_ik` (Inverse Kinematics service)
 - `/joint_trajectory_controller/follow_joint_trajectory` (Trajectory execution action)
+
+- Hardware
+- 
+```bash
+ros2 launch kortex_bringup gen3_lite.launch.py   robot_ip:=Your robot ip robot_type:=gen3_lite dof:=6 gripper:=gen3_lite_2f robot_name:=gen3_lite_gen3_lite_2f
+```
+### Step 2: Run the MoveIT2 Script
+```bash
+ros2 launch kinova_gen3_lite_moveit_config robot.launch.py   robot_ip:=Your robot ip
+```
+### Step 3: Run the Trajectory Script
+
+```bash
+ros2 run your_package circle.py
+```
+
+Replace `circle.py` with `lemniscate.py`, `lissajous.py`, `rectangle.py`, or `square.py` as needed.
 
 
